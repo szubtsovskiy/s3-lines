@@ -1,0 +1,71 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=windows-1251"/>
+<title>Lines</title><link rel="stylesheet" type="text/css" href="lines.css"/>
+<script language="javascript" src="lines.js"></script>
+</head>
+<body onload="init(); startNewGame(10, 10, 8);">
+	<table id="layout" align="center" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td id="header">	Lines
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr id="content">
+			<td id="gameField">
+			</td>
+			<td id="gameInfo">
+				<table align="center" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td>
+							<div class="subheader">	Your score:
+							</div>
+							<div id="count">	0
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="subheader">	Next turn:
+							</div>
+							<div>
+							<img id="nextBall1" name="nextBall1" width="20" height="20" src="img/spacer.gif" class="ball-next"/>
+							<img id="nextBall2" name="nextBall2" width="20" height="20" src="img/spacer.gif" class="ball-next"/>
+							<img id="nextBall3" name="nextBall3" width="20" height="20" src="img/spacer.gif" class="ball-next"/>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<hr noshade="noshade" />
+							<form id="newGameForm" name="newGameForm">
+								<div class="label">	Number of columns
+								</div>
+								<div>									
+									<input id="cols" name="cols" type="text" value="10" onblur="if ( !checkRange(this.value, 5, 15) ) {this.focus()}" />
+								</div>
+								<div class="label">	Number of rows
+								</div>
+								<div>									
+									<input id="rows" name="rows" type="text" value="10" onblur="if ( !checkRange(this.value, 5, 15) ) {this.focus()}" />
+								</div>
+								<div class="label">	Number of balls
+								</div>
+								<div>
+									<input id="balls" name="balls" type="text" value="8" onblur="if ( !checkRange(this.value, 3, 8) ) {this.focus()}" />
+								</div>
+								<div">									
+									<input class="submit" type="submit" value="Start new game" onclick="startNewGame(this.form.cols.value, this.form.rows.value, this.form.balls.value); return false;"/>
+								</div>
+							
+							</form>
+							<div id="debug"></div>
+						</td>
+					</tr>
+				</table>
+			</td>
+	</table>
+</body>
+</html>

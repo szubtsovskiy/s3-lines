@@ -1,0 +1,110 @@
+body {
+	margin: 20px 0px 0px 0px;
+	padding: 0px;	
+}
+
+hr {
+	color: #000080;
+}
+
+#layout {
+	vertical-align: top;	
+	padding: 15px 15px 15px 15px;
+}
+
+#layout #header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	padding-bottom: 15px;
+}
+
+#layout #content {
+	background-color: #C8DAF2;	
+}
+
+#layout td {
+	padding: 0px;	
+}
+
+#gameField table {
+	background-color: #C8DAF2;
+	border-collapse: collapse;
+}
+
+#gameField td {
+	border: 2px solid #000000;
+}
+
+
+#gameInfo {
+	width: 250px;
+	vertical-align: top;
+}
+
+#gameInfo table {
+	width: 100%;
+}
+
+#gameInfo td {
+	padding: 5px 10px 0px 10px;
+}
+
+#gameInfo .subheader {
+	font-weight: bold;
+	font-size: 18px;
+	font-style: italic;
+	letter-spacing: 2px;
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+
+#gameInfo div {
+	display: inline;
+}
+
+#gameInfo .ball-next {
+	margin: 0px 5px 0px 10px;
+	border: 0px none;
+}
+
+#gameInfo div#count {
+	font-weight: bold;
+	font-style: italic;
+	text-align: right;
+	width: 40px;
+}
+
+#gameInfo form {
+}
+
+#gameInfo form div {
+	display: block;
+}
+
+#gameInfo form div.button {
+	display: inline;
+}
+
+
+#gameInfo form div.label {
+	font-weight: bold;
+}
+
+#gameInfo form input, select {
+	font-weight: normal;
+	width: 100%;
+	text-align: right;
+}
+
+#gameInfo form input.submit {
+	margin-top: 5px;
+	text-align: center;
+	width: 50%;
+	
+}
+
+
